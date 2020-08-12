@@ -1,71 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <title> IE "Mundo de colores"</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<!-- primera pantalla -->
-
 <body>
-  <header>
-    <h1> IE "Mundo de colores" </h1>
-  </header>
-  
-  <main>
-    <nav>
-      <ul>
-        <li>Incripciones</li>
-        <li>Pagos</li>
-        <li>Contactos</li>
-      </ul>
-    </nav>
-    <section>
-      <article>
-        <hgroup>
-          <h1>COMUNICADO</h1>
-          <h2>subtitulo del primer articulo</h2>
-        </hgroup>
-        <time datetime="16-07-2020">publicado 16-07-2020</time>
-  
-        <p> Estimados padres de familia
-          Se les recuera que ya esta disponible el taller gratuito de teatro, y el plazo maximo para las inscripciones es
-          hasta el 30 de julio.
-          ATTE la directiva </p>
-        d
-        <img src="imagenes/logo1.jpg">
-  
-  
-  
-        <footer>
-          <p>comentarios (0)</p>
-        </footer>
-      </article>
-      <article>
-        <hgroup>
-          <h1>titulo del segundo articulo</h1>
-          <h2>subtitulo del segundo articulo</h2>
-        </hgroup>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita perspiciatis pariatur dolorem!
-          Doloremque accusantium ullam ducimus dolorem vitae facere optio, cupiditate modi animi voluptatum nobis ratione
-          quo minus architecto!</p>
-      </article>
-  
-      <div class="productosContainer">
-        <div><a href="productos.html"><img src="imagenes/logo1.jpg"></a></div>
-        <div><img src="imagenes/logo1.jpg"></div>
-        <div><img src="imagenes/logo1.jpg"></div>
+  <!-- barra de navegacion -->
+    <div id="barranav">
+      <div class= "togle-btn"> 
+        <span>&#9776;</span>
       </div>
+          <ul>
+            <li>
+              <img class="logo" src="imagenes/logo2.jpg" lang="logo mundo">    
+            </li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">inscripciones</a></li>
+            <li><a href="#" id="send">Pagos</a></li>
+            <li><a href="#">Contacos</a></li>
+          </ul>
+    </div> 
+       <!-- primera pantalla -->
+      <div class="pantallaUno" >
+        <main id="uno">
+          <section class="pizarra importante">
+            <article>
+              <hgroup>
+                <h1>COMUNICADO</h1>
+                <h2>subtitulo del primer articulo</h2>
+              </hgroup>
+              <time datetime="16-07-2020">publicado 16-07-2020</time>
+        
+              <p> Estimados padres de familia
+                Se les recuera que ya esta disponible el taller gratuito de teatro, y el plazo maximo para las inscripciones es
+                hasta el 30 de julio.
+                ATTE la directiva </p>
+                
+            
+        
+              <footer>
+                <p>comentarios (0)</p>
+                <form>
+                  <input type="text" inputtype="text" name="comentarios" />
+                </form>
+              </footer>
+            </article>
+            <article>
+              <hgroup>
+                <h1>titulo del segundo articulo</h1>
+                <h2>subtitulo del segundo articulo</h2>
+              </hgroup>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita perspiciatis pariatur dolorem!
+                Doloremque accusantium ullam ducimus dolorem vitae facere optio, cupiditate modi animi voluptatum nobis ratione
+                quo minus architecto!</p>
+            </article>
+        
+          </section>
+        </main>
+      
+      </div>
+
   
-    </section>
-    <aside>
-      Inicial 3
-      Inicial 4
-      Inicial 5
-    </aside>
-  </main>
-  <footer>Proyecto card validation Laboratoria - Derechos reservados</footer>
+  <!-- formulario -->
+  <div class="grupo-formulario">
+    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+      <div class="grupo">  
+         <label for="inputNombre">Nombre</label>
+               <input type="text" id="inputNombre" maxlength="16" autocomplete="off">
+             </div>
+             <div class="grupo">
+        <label for="inputNumero">Número Tarjeta</label>
+         <input type="text" id="inputNumero" maxlength="16" autocomplete="off">
+       </div>
+       <div class="flexbox"> 
+          <div class="grupo expira">
+            <label for="selectMes">Expiración</label>
+             <div class="flexbox">
+               <div class="grupo-select">
+                 <select name="mes" id="selectMes">
+                   <option disabled selected>Mes</option>
+                 </select>
+                 <i class="fas fa-angle-down"></i>
+               </div>
+              
+               <div class="grupo-select">
+                 <select name="year" id="selectYear">
+                   <option disabled selected>Año</option>
+                 </select>
+                 <i class="fas fa-angle-down"></i>
+                </div>
+               </div>
+             </div>
+                                                                                                                                                                                             
+           <div class="grupo ccv">
+             <label for="inputCCV">CCV</label>
+             <input type="text" id="inputCCV" maxlength="3">
+           </div>
+        </div>
+        <button type="submit" class="btn-validar" id="btn-validar">VALIDAR</button>
+
+        <div class="respuesta" id="pantalla-resultado">
+                
+          <p id="resultado">Tu tarjeta : </p> 
+         </div>      
+      </form>
+  </div>
+  <div class="fooder">
+    <footer>Proyecto card validation Laboratoria - Derechos reservados</footer>
+  </div>
+  
+  
+
   <script src="index.js" type="module"></script>
 
 </body>

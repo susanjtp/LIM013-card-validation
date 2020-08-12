@@ -1,12 +1,114 @@
-h1 { 
-    color: blue;
-    font-style: italic;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-body {
+
+#barranav {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    position:;
+    width: 500px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: yellow;
     text-align: center;
 }
-.productosContainer  {
+
+#barranav ul li {
+    display: inline-block;
+}
+
+#barranav ul li a {
+    color: black;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+
+#barranav ul li a:hover{
+    background-color: coral;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+}
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-image: url(imagenes/fondopantalla1.jpg);  
+ }
+
+ .pantallaUno {
+     width: 300px;
+     margin-top: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     color: darkblue;
+     font-size:1em;
+ }
+
+ .fooder{
+background-color: yellow;
+margin-left: auto;
+margin-right: auto;
+font-size: 10px;
+text-align: center;
+
+}
+
+ /* ----------formulario de tarjeta---------- */
+
+ .grupo-formulario {
+     background-color: darkmagenta;
+     width: 100%;
+     max-width: 500px;
+     padding: 50px 50px 50px 50px;
+
+}
+
+.formulario-tarjeta {
+    background-color:white;
+    width: 50%;
+    padding: 50px 50px 50px 50px;
+}
+
+.formulario-tarjeta label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+
+}
+
+.formulario-tarjeta .flexbox {
     display: flex;
-    justify-content: center;
+    justify-content: space-between
+}
+
+.formulario-tarjeta .expira {
+    width: 50%;
+    
+}
+
+.formulario-tarjeta .ccv {
+    min-width: 50px;
+}
+ 
+.formulario-tarjeta .btn-validar{
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    background: rgb(41, 89, 223);
+    cursor: pointer;
+}
+
+.respuesta {
+    background-color: aqua;
+    font: oblique bold 80% cursive;
+    margin-top: 15px;
 }
 

@@ -1,5 +1,4 @@
 # Tarjeta de crédito válida
-# Modificacion
 
 ## Índice
 
