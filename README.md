@@ -1,4 +1,47 @@
 # Tarjeta de crédito válida
+* 1. # Resumen del proyecto
+Esta pagina fue diseñada para un colegio de nivel inicial, ya que este nivel requiere mas seguimiento de sus padres y asi facilitarles a ellos, los procesos de pagos como tambien el acceso a la informacion oportuna de las actividades realizadas por la institucion.
+* 2. # Manual de uso
+Para esta pagina web requiere que los padres esten logueados en la pagina de la institucion y asi tambien ellos puedan hacer las consultas en el comunicado presentado.
+* 3. # Procedimiento
+Para el uso de la plataforma de pago se considera que se admita todo medio de pago entre ellas las tarjetas de credito y debito.
+ # 3.1 Público objetivo
+La pagina esta diseñada para colegio de nivel inicial, y los usuarios seran los padres de los alumnos de la institucion con el objetivo de facilitar la informacion sobre acuerdos de institucion o de aula, como tambien adquicision de materiales de manera opcional. Todo ello con el proposito de que esten pendientes (informados) de las actividades de sus niños desde la comodidad de su casa. 
+ # 3.2 Prototipo 
+![gráfica de papel](src/imagenes/pantallaPrincipal.jpg)
+![gráfica de papel](src/imagenes/pantallaDePago.jpg)
+
+* 4. # Herramientas Usadas
+html
+css
+javascript 
+visual studio code 
+
+
+* 5. # Anexos: Testing
+
+
+![gráfica de testing ](src/imagenes/testCardValidation.png)
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Índice
 

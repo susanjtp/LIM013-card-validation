@@ -1,37 +1,54 @@
 import validator from "./validator.js"
 
-//click funcion al boton validar
-document.getElementById('btn-validar').addEventListener('click',function(){
-    //llamo a la caja de tarjeta de credito del html
-    let numero =document.getElementById('inputNumero').value;
-    //llamo al validador isvalid de validator.js 
-    let resultado=validator.isValid(numero);
-    //ocultar
-    let numeroOculto =validator.maskify(numero);
-    if(resultado==true){
-      document.getElementById('resultado').innerHTML+= numeroOculto + " "+ "es válida";
-    } else{
-      document.getElementById('resultado').innerHTML+= numeroOculto + " "+ "es inválida";
-    }
-  });
-
-
-
 //boton para que se muestre la plataforma de pagos
 
-/*document.getElementById("send").addEventListener("click", ()=>{
+document.getElementById("send").addEventListener("click", ()=>{
     document.getElementById("uno").style.display= "none";
     document.getElementById("formulario-tarjeta").style.display = "block";
-})*/
+})
 
-/*document.getElementById("btn-validar").addEventListener("click", ()=>{
+document.getElementById("btn-validar").addEventListener("click", ()=>{
     event.preventDefault()
     let card = document.getElementById("inputNumero").value;
     let cardvalid = validator.isValid(card);
     validator.maskify(card)
-})*/
 
-//input numero de tarjeta
+    let numeroOculto =validator.maskify(card);
+    if(cardvalid==true){
+        document.getElementById('resultado').innerHTML+= numeroOculto + " "+ "es válida";
+    } else{
+        document.getElementById('resultado').innerHTML+= numeroOculto + " "+ "es inválida";   
+    }
+});
+
+
+
+//click funcion al boton validar, funcion regular
+//document.getElementById('btn-validar').addEventListener('click',function(){
+  //llamo a la caja de tarjeta de credito del html
+ // let numero =document.getElementById('inputNumero').value;
+  //llamo al validador isvalid de validator.js        
+  //let resultado=validator.isValid(numero);
+  //ocultar
+  //let numeroOculto =validator.maskify(numero);
+  //if(resultado==true){
+   // document.getElementById('resultado').innerHTML+= numeroOculto + " "+ "es válida";
+  //} else{
+   // document.getElementById('resultado').innerHTML+= numeroOculto + " "+ "es inválida";
+ // }
+//});
+
+
+
+
+
+
+
+
+
+
+
+//recibir solo numeros
 //formulario.inputnumero.addEventListener('keyup'), (e) =>{
     //console.log(e)
 //aqui termina mi codigo valido 
@@ -95,8 +112,6 @@ seccion2.classList.add('hide');
     
 } */ 
 /*
-window.onload = function() { 
-debugger
 document.getElementById("number").addEventListener("keyup", soloNumeros);
 };
 

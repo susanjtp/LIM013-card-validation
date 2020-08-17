@@ -1,10 +1,13 @@
+//aqui obtengo la reversa de mi numero de tarjeta
 const validator = {
   isValid: (card)=>{
     let reverso = "";
     for(let i = card.length-1; i>=0; i--){
       reverso = reverso + card[i];
     }                
-    // console.log(reverso)
+     
+
+    //aqui obtengo las pociciones
     const arreglo = Array.from(reverso).map(Number)
     let impares = []
     for (let i = 0; i< arreglo.length; i++){
@@ -14,7 +17,7 @@ const validator = {
         impares.push(arreglo[i]*1)
       }
     }
-    // console.log(impares)
+     
     let lista = []
     for(let i = 0; i < impares.length; i++){
       if(impares[i]>=10){
@@ -25,10 +28,10 @@ const validator = {
     }
     const total = lista.reduce((sum, current)=> sum + current, 0);
     if(total%10 ===0){
-      console.log(true)
+    
       return true;
     }else{
-      //console.log(false)
+     
       return false;
     }
   },
@@ -41,7 +44,7 @@ const validator = {
         maskifi = maskifi + card[i]
       }
     }
-    //console.log (maskifi)
+
      return maskifi
   }
 };
